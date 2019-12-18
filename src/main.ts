@@ -58,7 +58,7 @@ async function run() {
       console.log(`${script}`);
     });
     // skip killing emulator
-    const keepEmulator = !!core.getInput('keep');
+    const keepEmulator = core.getInput('keep') === 'true';
     console.log(`keep emulator: ${keepEmulator}`);
 
     // install SDK

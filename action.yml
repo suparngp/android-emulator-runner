@@ -30,7 +30,7 @@ inputs:
   keep:
     description: 'keep emulator running after executing scripts'
     required: false
-    default: false
+    default: "false"
 runs:
   using: 'node12'
   main: 'lib/main.js'
