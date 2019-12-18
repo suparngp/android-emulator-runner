@@ -57,7 +57,6 @@ async function run() {
     scripts.forEach(async (script: string) => {
       console.log(`${script}`);
     });
-    
     // skip killing emulator
     const keepEmulator = !!core.getInput('keep');
     console.log(`keep emulator: ${keepEmulator}`);
@@ -84,7 +83,6 @@ async function run() {
     if (!keepEmulator) {
       await killEmulator();
     }
-
   } catch (error) {
     // kill the emulator so the action can exit
     await killEmulator();
