@@ -82,6 +82,8 @@ async function run() {
 
     if (!keepEmulator) {
       await killEmulator();
+    } else {
+      process.exit(0);
     }
   } catch (error) {
     // kill the emulator so the action can exit
