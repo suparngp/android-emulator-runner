@@ -27,6 +27,10 @@ inputs:
   script:
     description: 'custom script to run - e.g. `./gradlew connectedCheck`'
     required: true
+  keep:
+    description: 'keep emulator running after executing scripts'
+    required: false
+    default: false
 runs:
   using: 'node12'
   main: 'lib/main.js'
